@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELAMAT HARI GURU SMP FIKRI</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #FFD700, #FF4500, #8A2BE2, #000000);
+      background-size: 400% 400%;
+      animation: backgroundAnimation 8s infinite alternate;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow-y: auto;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .title {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FF4500;
+      animation: pulse 1s infinite;
+    }
+
+    h1 {
+      color: #ffcb04;
+    }
+
+    h2 {
+      color: #00BFFF;
+      text-shadow: 0 0 10px #00BFFF, 0 0 20px #1E90FF;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .subtitle {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px white;
+    }
+
+    .visitor-info {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      text-shadow: none;
+    }
+
+    .open-btn {
+      font-size: 3rem;
+      color: white;
+      background: linear-gradient(to right, #FF6347, #FF4500);
+      border: none;
+      padding: 20px 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 25px;
+      box-shadow: 0 0 20px #FFFFFF;
+      animation: blink 0.5s infinite alternate; /* Menambahkan animasi kedip */
+    }
+
+    .open-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(to right, #FF4500, #FF6347);
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .message {
+      display: none;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hidden-content {
+      display: none;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .hidden-content img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border: 5px solid transparent;
+      border-radius: 15px;
+      box-shadow: 0 0 10px white;
+      position: relative;
+      animation: flameBorder 1s infinite alternate;
+    }
+
+    .hidden-content .small-img {
+      width: 150px;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #FFFFFF;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hidden-content .small-img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000FF, 0 0 20px #1E90FF, 0 0 30px #00BFFF; /* Warna biru membara */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid transparent;
+  animation: blueFlame 1s infinite alternate; /* Animasi bingkai */
+}
+
+@keyframes blueFlame {
+  0% {
+    border-color: transparent;
+    box-shadow: 0 0 10px #1E90FF, 0 0 20px #0000FF, 0 0 30px #0000FF;
+  }
+  50% {
+    border-color: #1E90FF;
+    box-shadow: 0 0 10px #00BFFF, 0 0 20px #1E90FF, 0 0 30px #1E90FF;
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: 0 0 10px #1E90FF, 0 0 20px #0000FF, 0 0 30px #0000FF;
+  }
+}
+
+    @keyframes flameBorder {
+      0% {
+        border-color: transparent;
+        box-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FF6347;
+      }
+      50% {
+        border-color: #FF6347;
+        box-shadow: 0 0 10px #FF4500, 0 0 20px #FF4500, 0 0 30px #FF4500;
+      }
+      100% {
+        border-color: transparent;
+        box-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FF6347;
+      }
+    }
+
+    audio {
+      margin-top: 20px;
+      box-shadow: 0 0 15px white;
+    }
+
+    .new-title {
+      font-size: 2rem;
+      color: #FFD700;
+      margin-top: 20px;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FF4500;
+    }
+
+    .moving-name {
+      font-size: 2rem;
+      color: black;
+      background-color: cyan;
+      padding: 10px 20px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-top: 20px;
+      position: relative;
+      animation: moveText 8s linear infinite;
+    }
+
+    @keyframes moveText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .hidden-content .small-img:last-child {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #0000FF, 0 0 20px #1E90FF, 0 0 30px #00BFFF; /* Warna biru membara */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid transparent;
+  animation: blueFlame 1s infinite alternate; /* Animasi bingkai */
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">SELAMAT HARI GURU</h1>
+    <h2 class="title">SMP FIKRI</h2>
+    <p class="subtitle">"Guru adalah pelita ilmu yang tak pernah padam."</p>
+    <div class="visitor-info" id="visitorInfo">
+      JUMBLAH PENGUNJUNG: <span id="visitCount">0</span>
+    </div>
+    <button class="open-btn" id="openButton" onclick="showMessage()">-->✉️<--</button>
+    <div class="message" id="message">
+      <p>
+        Pada tanggal 25 November 2024 ini, saya FIQRI NAUFAL MAHARDIKA, ingin mengucapkan terima kasih yang sebesar-besarnya kepada semua guru yang telah dengan tulus mengajar, membimbing, dan memberikan ilmu serta nilai-nilai kehidupan yang tak ternilai harganya.
+      </p>
+      <p>
+        Untuk semua guru di SMP FIKRI, terima kasih atas ilmu, semangat, dan keteladanan yang telah kalian berikan. FIQRI merasa sangat beruntung bisa belajar dan tumbuh di bawah bimbingan yang penuh kasih dan sabar. Selamat Hari Guru!
+      </p>
+      <p>
+        Guru adalah seseorang yang tidak hanya mengajarkan ilmu pengetahuan, tetapi juga memberikan kepercayaan diri, membangun harapan, dan menanamkan semangat untuk terus maju. Mereka adalah pemandu dalam perjalanan hidup kami, mengarahkan kami menuju masa depan yang lebih cerah. Tanpa guru, kita mungkin tidak akan tahu potensi sejati yang kita miliki. Mereka adalah pahlawan yang membentuk generasi bangsa dengan kasih sayang, dedikasi, dan semangat tanpa henti. Terima kasih, guru, karena kalian telah memberikan kami lebih dari sekadar ilmu.
+      </p>
+    </div>
+    <div class="hidden-content" id="hiddenContent">
+      <audio id="audio" autoplay loop>
+        <source src="Terimakasih.mp3" type="audio/mpeg">
+      </audio>
+      <img src="SMP1.jpg" alt="Gambar 1">
+      <img src="SMP2.jpg" alt="Gambar 2">
+      <div class="new-title">FIQRI 81</div>
+      <div class="moving-name">CODING:FIQRI</div>
+      <img src="FIQRI.jpg" alt="FIQRI" class="small-img">
+      <img src="FIQRI1.png" alt="FIQRI" class="small-img">
+    </div>
+  </div>
+<script>
+  // Cek jika pengunjung sudah masuk pada sesi ini
+  const visitCountKey = 'visitCount';
+  const sessionVisitKey = 'hasVisited';
+
+  // Ambil jumlah kunjungan dari sessionStorage atau localStorage
+  let visitCount = parseInt(localStorage.getItem(visitCountKey)) || 0;
+
+  // Jika pengunjung belum masuk pada sesi ini
+  if (!sessionStorage.getItem(sessionVisitKey)) {
+    // Tingkatkan jumlah kunjungan
+    visitCount += 1;
+    localStorage.setItem(visitCountKey, visitCount);
+
+    // Tandai bahwa pengunjung sudah masuk pada sesi ini
+    sessionStorage.setItem(sessionVisitKey, 'true');
+  }
+
+  // Tampilkan jumlah kunjungan di halaman
+  document.getElementById('visitCount').innerText = visitCount;
+
+  function showMessage() {
+    const audio = document.getElementById('audio');
+    audio.play();
+    document.querySelector('.message').style.display = 'block';
+    document.getElementById('hiddenContent').style.display = 'block';
+    
+    const button = document.getElementById('openButton');
+    button.innerText = 'BACA YA';
+    button.disabled = true;
+
+    // Menghentikan animasi kedip dengan cara ini
+    button.style.animation = 'none'; // Menghentikan animasi kedip
+    button.style.transition = 'none'; // Menghentikan transisi
+
+    // Menyembunyikan jumlah pengunjung setelah tombol ditekan
+    document.getElementById('visitorInfo').style.display = 'none';
+  }
+</script>
+</body>
+</html>
